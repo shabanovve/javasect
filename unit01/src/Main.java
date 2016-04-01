@@ -1,18 +1,30 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("2 x  1 =  2");
-        System.out.println("2 x  2 =  4");
-        System.out.println("2 x  3 =  6");
-        System.out.println("2 x  4 =  8");
-        System.out.println("2 x  5 = 10");
-        System.out.println("2 x  6 = 12");
-        System.out.println("2 x  7 = 14");
-        System.out.println("2 x  8 = 16");
-        System.out.println("2 x  9 = 18");
-        System.out.println("2 x 10 = 20");
 
         System.out.println("===========");
         new Column(2).show();
+
+        System.out.println("===========");
+        new Column(3).show();
+
+        System.out.println("===========");
+        new Column(4).show();
+
+        System.out.println("===========");
+        new Column(5).show();
+
+        System.out.println("===========");
+        new Column(6).show();
+
+        System.out.println("===========");
+        new Column(7).show();
+
+        System.out.println("===========");
+        new Column(8).show();
+
+        System.out.println("===========");
+        new Column(9).show();
+
     }
 }
