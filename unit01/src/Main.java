@@ -13,16 +13,6 @@ public class Main {
         System.out.println("2 x 10 = 20");
 
         System.out.println("===========");
-
-        String prefix = "";
-        for (int i = 1; i <= 10; i++) {
-            if (i < 10) {
-                prefix = "2 x  ";
-            } else {
-                prefix = "2 x ";
-            }
-
-            System.out.println(prefix + i + " = " + 2 * i);
-        }
+        new Column().show();
     }
 }
