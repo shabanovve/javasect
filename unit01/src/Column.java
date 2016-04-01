@@ -5,6 +5,7 @@ public class Column {
 
     public void show() {
         String prefix = "";
+        String sufix = "";
         for (int i = 1; i <= 10; i++) {
             if (i < 10) {
                 prefix = "2 x  ";
@@ -12,7 +13,13 @@ public class Column {
                 prefix = "2 x ";
             }
 
-            System.out.println(prefix + i + " = " + 2 * i);
+            if (2 * i < 10) {
+                sufix = " " + Integer.toString(2 * i);
+            } else {
+                sufix = Integer.toString(2 * i);
+            }
+
+            System.out.println(prefix + i + " = " + sufix);
         }
     }
 }
