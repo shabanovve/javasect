@@ -14,14 +14,15 @@ public class Main {
 
         System.out.println("===========");
 
+        String prefix = "";
         for (int i = 1; i <= 10; i++) {
-            String prefix = "";
-            String sufix = "";
             if (i < 10) {
-                System.out.println("2 x  " + i + " = " + 2 * i);
+                prefix = "2 x  ";
             } else {
-                System.out.println("2 x " + i + " = " + 2 * i);
+                prefix = "2 x ";
             }
+
+            System.out.println(prefix + i + " = " + 2 * i);
         }
     }
 }
