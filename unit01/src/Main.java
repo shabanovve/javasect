@@ -11,5 +11,11 @@ public class Main {
         System.out.println("2 x  8 = 16");
         System.out.println("2 x  9 = 18");
         System.out.println("2 x 10 = 20");
+
+        System.out.println("===========");
+
+        for (int i = 0; i < 10; i++){
+            System.out.println("2 x 10 = 20");
+        }
     }
 }
