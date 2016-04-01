@@ -13,6 +13,6 @@ public class Main {
         System.out.println("2 x 10 = 20");
 
         System.out.println("===========");
-        new Column().show();
+        new Column(2).show();
     }
 }

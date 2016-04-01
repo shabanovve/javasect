@@ -3,6 +3,12 @@
  */
 public class Column {
 
+    private int multiplicand;
+
+    public Column(int multiplicand) {
+        this.multiplicand = multiplicand;
+    }
+
     public void show() {
         String prefix = "";
         String sufix = "";
@@ -15,20 +21,20 @@ public class Column {
 
     private String getSufix(int i) {
         String sufix;
-        if (2 * i < 10) {
-            sufix = " " + Integer.toString(2 * i);
+        if (multiplicand * i < 10) {
+            sufix = " " + Integer.toString(multiplicand * i);
         } else {
-            sufix = Integer.toString(2 * i);
+            sufix = Integer.toString(multiplicand * i);
         }
         return sufix;
     }
 
     private String getPrefix(int i) {
-        String prefix;
+        String prefix = "";
         if (i < 10) {
-            prefix = "2 x  ";
+            prefix = Integer.toString(multiplicand) + " x  ";
         } else {
-            prefix = "2 x ";
+            prefix = Integer.toString(multiplicand) + " x ";
         }
         return prefix;
     }
