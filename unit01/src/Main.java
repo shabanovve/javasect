@@ -15,7 +15,7 @@ public class Main {
         System.out.println("===========");
 
         for (int i = 1; i <= 10; i++) {
-            System.out.println("2 x " + i + " = 20");
+            System.out.println("2 x " + i + " = " + 2 * i);
         }
     }
 }
