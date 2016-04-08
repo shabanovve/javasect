@@ -21,11 +21,11 @@ public class Matrix {
         return Integer.toString(elements[i][j]);
     }
 
-    public static void outputMatrix(Matrix matrix, String title) {
+    public void outputMatrix( String title) {
         System.out.println(title);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.print(matrix.getElement(i,j) + " ");
+                System.out.print(getElement(i,j) + " ");
             }
             System.out.println();
         }
