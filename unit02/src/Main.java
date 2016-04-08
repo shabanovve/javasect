@@ -14,8 +14,11 @@ public class Main {
 
         Matrix a = new Matrix();
         a.prepare();
+        Matrix.outputMatrix(a, "Matrix A with random numbers");
 
-        Matrix.outputMatrix(a, "Matrix with random numbers");
+        Matrix b = new Matrix();
+        b.prepare();
+        Matrix.outputMatrix(b, "Matrix B with random numbers");
 
     }
 
