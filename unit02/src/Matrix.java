@@ -17,4 +17,7 @@ public class Matrix {
         }
     }
 
+    public String getElement(int i, int j) {
+        return Integer.toString(elements[i][j]);
+    }
 }
