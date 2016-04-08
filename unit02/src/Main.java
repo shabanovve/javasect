@@ -11,7 +11,7 @@ public class Main {
         Matrix.outputMatrix(b, "Matrix B with random numbers");
 
         Matrix c = summarizeMatrices(a,b);
-        outputMatrix(c,"Summarize two random matrix");
+        Matrix.outputMatrix(c,"Summarize two random matrix");
 
     }
 
