@@ -20,8 +20,7 @@ public class Main {
         Matrix result = new Matrix();
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                String number = firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j);
-                result.setElement(Integer.decode(number));
+                result.setElement(i,j,firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j));
             }
         }
         return result;

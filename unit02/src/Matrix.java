@@ -17,8 +17,8 @@ public class Matrix {
         }
     }
 
-    public String getElement(int i, int j) {
-        return Integer.toString(elements[i][j]);
+    public int getElement(int i, int j) {
+        return elements[i][j];
     }
 
     public void outputMatrix( String title) {
@@ -32,4 +32,7 @@ public class Matrix {
         System.out.println("=============");
     }
 
+    public void setElement(int i,int j, Integer element) {
+        this.elements[i][j] = element;
+    }
 }
