@@ -4,14 +4,14 @@ public class Main {
 
         Matrix a = new Matrix();
         a.prepare();
-        Matrix.outputMatrix(a, "Matrix A with random numbers");
+        a.outputMatrix("Matrix A with random numbers");
 
         Matrix b = new Matrix();
         b.prepare();
-        Matrix.outputMatrix(b, "Matrix B with random numbers");
+        b.outputMatrix("Matrix B with random numbers");
 
         Matrix c = summarizeMatrices(a,b);
-        Matrix.outputMatrix(c,"Summarize two random matrix");
+        c.outputMatrix("Summarize two random matrix");
 
     }
 
