@@ -21,7 +21,7 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 String number = firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j);
-                result[i][j] = Integer.decode(number);
+                result.setElement(Integer.decode(number));
             }
         }
         return result;
