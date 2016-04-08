@@ -15,15 +15,6 @@ public class Main {
 
     }
 
-    private static int[][] summarizeMatrices(int[][] firstMatrix, int[][] secondMatrix) {
-        int[][] result = new int[3][3];
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                result[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
-            }
-        }
-        return result;
-    }
 
     private static Matrix summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
         int[][] result = new int[3][3];
@@ -36,14 +27,4 @@ public class Main {
         return null;
     }
 
-    private static void outputMatrix(int[][] firstMatrix, String title) {
-        System.out.println(title);
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(firstMatrix[i][j] + " ");
-            }
-            System.out.println();
-        }
-        System.out.println("=============");
-    }
 }
