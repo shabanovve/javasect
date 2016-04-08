@@ -10,7 +10,7 @@ public class Main {
         b.prepare();
         b.outputMatrix("Matrix B with random numbers");
 
-        Matrix c = Matrix.summarizeMatrices(a,b);
+        Matrix c = Matrix.summarizeMatrices(a, b);
         c.outputMatrix("Summarize two random matrix");
 
         Matrix[] matrices = new Matrix[10];
@@ -18,6 +18,10 @@ public class Main {
             Matrix m = new Matrix();
             m.prepare();
             matrices[i] = m;
+        }
+
+        for (int i = 0; i < 10; i++) {
+            matrices[i].outputMatrix("Random matrix #" + i);
         }
     }
 
