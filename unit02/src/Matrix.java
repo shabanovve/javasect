@@ -25,7 +25,13 @@ public class Matrix {
         System.out.println(title);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.print(getElement(i,j) + " ");
+               int number = getElement(i,j);
+                if (number < 10){
+                    System.out.print(" " + number + " ");
+
+                } else {
+                    System.out.print(number + " ");
+                }
             }
             System.out.println();
         }
