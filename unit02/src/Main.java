@@ -32,6 +32,17 @@ public class Main {
         return result;
     }
 
+    private static int[][] summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
+        int[][] result = new int[3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                String number = firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j);
+                result[i][j] = Integer.decode(number);
+            }
+        }
+        return result;
+    }
+
     private static void outputMatrix(int[][] firstMatrix, String title) {
         System.out.println(title);
         for (int i = 0; i < 3; i++) {
