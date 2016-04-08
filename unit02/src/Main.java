@@ -10,7 +10,12 @@ public class Main {
 
         summarizeMatrices(firstMatrix, secondMatrix, result);
 
-        outputMatrix(result,"Result matrix");
+        outputMatrix(result, "Result matrix");
+
+        Matrix a = new Matrix();
+        a.prepare();
+
+        outputMatrix(a, "Matrix with random numbers");
 
     }
 
@@ -27,6 +32,16 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(firstMatrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("=============");
+    }
+    private static void outputMatrix(Matrix matrix, String title) {
+        System.out.println(title);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix.getElement(i,j) + " ");
             }
             System.out.println();
         }
