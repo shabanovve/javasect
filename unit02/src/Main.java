@@ -20,6 +20,9 @@ public class Main {
         b.prepare();
         Matrix.outputMatrix(b, "Matrix B with random numbers");
 
+        result = summarizeMatrices(a,b);
+        outputMatrix(result,"Summarize two random matrix");
+
     }
 
     private static int[][] summarizeMatrices(int[][] firstMatrix, int[][] secondMatrix) {
