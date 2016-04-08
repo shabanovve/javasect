@@ -10,20 +10,9 @@ public class Main {
         b.prepare();
         b.outputMatrix("Matrix B with random numbers");
 
-        Matrix c = summarizeMatrices(a,b);
+        Matrix c = Matrix.summarizeMatrices(a,b);
         c.outputMatrix("Summarize two random matrix");
 
-    }
-
-
-    private static Matrix summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
-        Matrix result = new Matrix();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                result.setElement(i,j,firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j));
-            }
-        }
-        return result;
     }
 
 }

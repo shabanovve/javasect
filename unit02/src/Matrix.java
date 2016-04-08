@@ -35,4 +35,15 @@ public class Matrix {
     public void setElement(int i,int j, Integer element) {
         this.elements[i][j] = element;
     }
+
+    public static Matrix summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
+        Matrix result = new Matrix();
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                result.setElement(i,j,firstMatrix.getElement(i,j) + secondMatrix.getElement(i,j));
+            }
+        }
+        return result;
+    }
+
 }
