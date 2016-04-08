@@ -2,13 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        outputMatrix(firstMatrix, "First matrix");
-        outputMatrix(secondMatrix, "Second matrix");
-
-        result = summarizeMatrices(firstMatrix, secondMatrix);
-
-        outputMatrix(result, "Result matrix");
-
         Matrix a = new Matrix();
         a.prepare();
         Matrix.outputMatrix(a, "Matrix A with random numbers");
@@ -17,8 +10,8 @@ public class Main {
         b.prepare();
         Matrix.outputMatrix(b, "Matrix B with random numbers");
 
-        result = summarizeMatrices(a,b);
-        outputMatrix(result,"Summarize two random matrix");
+         = summarizeMatrices(a,b);
+        outputMatrix(,"Summarize two random matrix");
 
     }
 
