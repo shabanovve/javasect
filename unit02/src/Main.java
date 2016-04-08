@@ -10,8 +10,8 @@ public class Main {
         b.prepare();
         Matrix.outputMatrix(b, "Matrix B with random numbers");
 
-         = summarizeMatrices(a,b);
-        outputMatrix(,"Summarize two random matrix");
+        Matrix c = summarizeMatrices(a,b);
+        outputMatrix(c,"Summarize two random matrix");
 
     }
 
@@ -25,7 +25,7 @@ public class Main {
         return result;
     }
 
-    private static int[][] summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
+    private static Matrix summarizeMatrices(Matrix firstMatrix, Matrix secondMatrix) {
         int[][] result = new int[3][3];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -33,7 +33,7 @@ public class Main {
                 result[i][j] = Integer.decode(number);
             }
         }
-        return result;
+        return null;
     }
 
     private static void outputMatrix(int[][] firstMatrix, String title) {
